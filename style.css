@@ -58,7 +58,6 @@ p {
   margin: 0px auto;
   padding-right: 15px;
   padding-left: 15px;
-  /* outline: 2px dashed red; */
 }
 
 /* ГЛОБАЛЬНЫЕ ПАДИНГИ ДЛЯ СЕКЦИЙ */
@@ -93,7 +92,7 @@ p {
 }
 
 /* ----------- Шапка сайта ----------- */
-/* -------------- Логотип -------------- */
+
 .header {
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
@@ -104,11 +103,13 @@ p {
   justify-content: space-between;
 }
 
+/* ------- Навигация --------- */
 .navigation {
   display: flex;
   align-items: center;
 }
 
+/* -------------- Логотип -------------- */
 .navigation__logo {
   margin-right: 93px;
 
@@ -885,31 +886,15 @@ p {
 }
 
 .form__modal-treaty {
+  margin-left: 4px;
+
   text-decoration: none;
 
   color: var(--accent-color);
 }
 
-.form__modal-treaty::after {
-  content: '';
-  position: absolute;
-
-  bottom: 2px;
-  display: block;
-
-  width: 100%;
-  height: 2px;
-
-  background: var(--accent-color);
-
-  transform: scaleX(0\1);
-
-  transition: transform var(--timing-function);
-}
-
-.form__modal-treaty--hover:hover::after {
-  transform: scaleX(0);
-  /* text-decoration: none; */
+.form__modal-treaty--hover:hover {
+  text-decoration: underline;
 }
 
 /* Кнопка отправки */

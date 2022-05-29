@@ -1,1 +1,7 @@
-@import './test';
+@import 'utils/variables';
+@import 'utils/global-style';
+@import 'components/page-header';
+@import 'components/_page-primery';
+@import 'components/page-feature';
+@import 'components/page-services';
+@import 'components/page-team';
