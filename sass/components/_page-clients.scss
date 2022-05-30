@@ -1,0 +1,37 @@
+// --------- Постоянные клиенты
+.clients__list {
+  display: flex;
+  margin-right: calc(-1 * $card-set-gap);
+}
+
+.clients__item {
+  flex-basis: calc(100% / 6 - $card-set-gap);
+  margin-right: $card-set-gap;
+}
+
+.client__logo-container {
+  display: flex;
+  padding: 16px 32px;
+
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid getColor('icon-border');
+  border-radius: 4px;
+
+  transition: border $timing-function-cubic;
+
+  &--hover:hover,
+  &--hover:focus,
+  &--hover:hover .clients__icon,
+  &--hover:focus .clients__icon {
+    border-color: getColor('accent');
+    fill: getColor('accent');
+  }
+}
+
+.clients__icon {
+  fill: rgba(175, 177, 184, 1);
+
+  transition: fill $timing-function-cubic;
+}
