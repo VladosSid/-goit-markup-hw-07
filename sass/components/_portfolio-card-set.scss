@@ -31,13 +31,14 @@
 }
 
 .card-set__block-img {
-  position: relative;
+  @include positioning();
+
   overflow: hidden;
 }
 
 .card-set__overlay {
   content: '';
-  position: absolute;
+  @include positioning(absolute);
   display: flex;
   align-items: center;
 

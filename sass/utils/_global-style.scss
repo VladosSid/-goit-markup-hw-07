@@ -19,7 +19,7 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
-
+//  -------- ПЛЕЙСХОЛДЕРЫ -------
 // ---- ЛОГО плейсхолдер
 %logo-style-text {
   font-family: 'Raleway', sans-serif;
@@ -33,6 +33,12 @@ p {
 %section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+// -------- МИКСИНЫ --------
+// -------- Позиционированные элементы -------
+@mixin positioning($position: relative) {
+  position: $position;
 }
 
 .title-style {

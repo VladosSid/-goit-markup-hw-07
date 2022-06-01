@@ -1,6 +1,6 @@
 // ----- МОДАЛЬНОЕ ОКНО
 .backdrop {
-  position: fixed;
+  @include positioning(fixed);
   left: 0;
   bottom: 0;
   width: 100%;
@@ -21,7 +21,7 @@
   }
 
   &__modal {
-    position: absolute;
+    @include positioning(absolute);
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -35,33 +35,39 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
   }
+}
 
-  // ------------ Кнопка закрытия
-  &__button-close {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    cursor: pointer;
+.backdrop__button-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
 
-    right: 8px;
-    top: 8px;
-    width: 30px;
-    height: 30px;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
 
-    background: getColor('white-text');
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
+  background: getColor('white-text');
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  &:hover .backdrop__button-close-icon,
+  &:focus .backdrop__button-close-icon {
+    fill: getColor('accent');
   }
 }
 
 .backdrop__button-close-icon {
   transition: fill $timing-function-cubic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  &--hover:hover,
-  &--hover:focus {
-    fill: getColor('accent');
-  }
+.backdrop__icon-item {
+  display: block;
 }
 
 // ---------- Заголовок формы

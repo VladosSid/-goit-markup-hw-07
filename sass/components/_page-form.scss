@@ -8,7 +8,7 @@
 }
 
 .form__label {
-  position: relative;
+  @include positioning();
 
   margin-bottom: 10px;
 }
@@ -47,7 +47,7 @@
 }
 
 .form__icon {
-  position: absolute;
+  @include positioning(absolute);
   top: 50%;
   left: 12px;
 
