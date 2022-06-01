@@ -145,7 +145,7 @@
 
   color: getColor('accent');
 
-  &--hover:hover {
+  &:hover {
     text-decoration: underline;
   }
 }
@@ -182,7 +182,7 @@
 
   transition: background $timing-function-cubic;
 
-  &--hover:hover {
+  &:hover {
     background: #188ce8;
   }
 }

@@ -20,6 +20,21 @@ p {
   margin-bottom: 0;
 }
 
+// ---- ЛОГО плейсхолдер
+%logo-style-text {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+/* ГЛОБАЛЬНЫЕ ПАДИНГИ ДЛЯ СЕКЦИЙ плейсхолдер */
+%section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .title-style {
   font-weight: 700;
   font-size: 36px;
@@ -33,12 +48,6 @@ p {
   margin: 0px auto;
   padding-right: 15px;
   padding-left: 15px;
-}
-
-/* ГЛОБАЛЬНЫЕ ПАДИНГИ ДЛЯ СЕКЦИЙ */
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 /* сброс отсутпов и точек в списках */

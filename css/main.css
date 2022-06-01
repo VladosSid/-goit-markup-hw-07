@@ -20,6 +20,20 @@ p {
   margin-bottom: 0;
 }
 
+.footer__logo, .navigation__logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+/* ГЛОБАЛЬНЫЕ ПАДИНГИ ДЛЯ СЕКЦИЙ плейсхолдер */
+.portfolio, .clients, .team, .services {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .title-style {
   font-weight: 700;
   font-size: 36px;
@@ -33,12 +47,6 @@ p {
   margin: 0px auto;
   padding-right: 15px;
   padding-left: 15px;
-}
-
-/* ГЛОБАЛЬНЫЕ ПАДИНГИ ДЛЯ СЕКЦИЙ */
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 /* сброс отсутпов и точек в списках */
@@ -82,12 +90,7 @@ p {
 }
 .navigation__logo {
   margin-right: 93px;
-  color: var(--logo-color);
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  text-decoration: none;
+  color: #000000;
 }
 .navigation__logo-accent {
   color: #2196f3;
@@ -116,7 +119,7 @@ p {
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navigation__link--hover:hover, .navigation__link--hover:focus {
+.navigation__link:hover, .navigation__link:focus {
   color: #2196f3;
 }
 .navigation__link--carrent {
@@ -241,16 +244,13 @@ p {
   display: flex;
   margin-right: -30px;
 }
-
 .services__item {
   flex-basis: calc(33.3333333333% - 30px);
   margin-right: 30px;
 }
-
 .services__block-img {
   position: relative;
 }
-
 .services__labl {
   display: flex;
   align-items: center;
@@ -319,10 +319,10 @@ p {
   background-color: #ffffff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team__socials-more--hover:hover, .team__socials-more--hover:focus {
+.team__socials-more:hover, .team__socials-more:focus {
   background-color: #2196f3;
 }
-.team__socials-more--hover:hover .team__icon, .team__socials-more--hover:focus .team__icon {
+.team__socials-more:hover .team__icon, .team__socials-more:focus .team__icon {
   fill: #ffffff;
 }
 
@@ -335,7 +335,6 @@ p {
   display: flex;
   margin-right: -30px;
 }
-
 .clients__item {
   flex-basis: calc(16.6666666667% - 30px);
   margin-right: 30px;
@@ -350,7 +349,7 @@ p {
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.client__logo-container--hover:hover, .client__logo-container--hover:focus, .client__logo-container--hover:hover .clients__icon, .client__logo-container--hover:focus .clients__icon {
+.client__logo-container:hover, .client__logo-container:focus, .client__logo-container:hover .clients__icon, .client__logo-container:focus .clients__icon {
   border-color: #2196f3;
   fill: #2196f3;
 }
@@ -375,11 +374,6 @@ p {
   display: inline-block;
   margin-bottom: 20px;
   margin-right: 0;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  text-decoration: none;
   color: #ffffff;
 }
 .footer__accent-logo {
@@ -407,9 +401,9 @@ p {
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer__mail--hover:focus, .footer__mail--hover:hover,
-.footer__tell--hover:focus,
-.footer__tell--hover:hover {
+.footer__mail:focus, .footer__mail:hover,
+.footer__tell:focus,
+.footer__tell:hover {
   color: #2196f3;
 }
 
@@ -445,7 +439,7 @@ p {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-media-footer__more--hover:hover, .social-media-footer__more--hover:focus {
+.social-media-footer__more:hover, .social-media-footer__more:focus {
   background-color: #2196f3;
 }
 
@@ -483,7 +477,7 @@ p {
   color: #ffffff;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.subscribe__input--hover:hover, .subscribe__input--hover:focus {
+.subscribe__input:hover, .subscribe__input:focus {
   border-color: #2196f3;
 }
 
@@ -507,7 +501,7 @@ p {
   color: #ffffff;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.subscribe__button--hover:hover, .subscribe__button--hover:focus {
+.subscribe__button:hover, .subscribe__button:focus {
   background: #188ce8;
 }
 
@@ -550,6 +544,7 @@ p {
   align-items: center;
   justify-content: center;
   position: absolute;
+  cursor: pointer;
   right: 8px;
   top: 8px;
   width: 30px;
@@ -693,7 +688,7 @@ p {
   text-decoration: none;
   color: #2196f3;
 }
-.form__modal-treaty--hover:hover {
+.form__modal-treaty:hover {
   text-decoration: underline;
 }
 
@@ -723,7 +718,7 @@ p {
   cursor: pointer;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__modal-send--hover:hover {
+.form__modal-send:hover {
   background: #188ce8;
 }
 
@@ -751,7 +746,7 @@ p {
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio__button--hover:hover, .portfolio__button--hover:focus {
+.portfolio__button:hover, .portfolio__button:focus, .portfolio__button--active {
   border: 1px solid #2196f3;
   border-radius: 4px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -777,10 +772,10 @@ p {
   text-decoration: none;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.card-set__linck--hover:hover, .card-set__linck--hover:focus {
+.card-set__linck:hover, .card-set__linck:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 0px 4px rgba(0, 0, 0, 0.06);
 }
-.card-set__linck--hover:hover .card-set__overlay, .card-set__linck--hover:focus .card-set__overlay {
+.card-set__linck:hover .card-set__overlay, .card-set__linck:focus .card-set__overlay {
   transform: translateY(0);
 }
 
@@ -792,7 +787,8 @@ p {
 .card-set__overlay {
   content: "";
   position: absolute;
-  display: block;
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 100%;
   top: 0;
@@ -804,9 +800,12 @@ p {
 
 .card-set__description {
   position: absolute;
+  display: flex;
+  align-items: center;
   top: 0;
   left: 0;
-  padding: 63px 24px;
+  height: 100%;
+  padding: 0 24px;
   font-size: 18px;
   line-height: 1.6;
   color: #ffffff;

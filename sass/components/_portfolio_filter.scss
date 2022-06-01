@@ -1,5 +1,9 @@
 //  --------- Стилизация Портфолио
 //  --------- Тело сайта
+.portfolio {
+  @extend %section;
+}
+
 //  --------- Фильтр
 .portfolio__filter {
   display: flex;
@@ -31,8 +35,9 @@
   transition: background-color $timing-function-cubic, border $timing-function-cubic,
     color $timing-function-cubic, box-shadow $timing-function-cubic;
 
-  &--hover:hover,
-  &--hover:focus {
+  &:hover,
+  &:focus,
+  &--active {
     border: 1px solid getColor('accent');
     border-radius: 4px;
 

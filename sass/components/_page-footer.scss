@@ -19,13 +19,9 @@
     margin-bottom: 20px;
     margin-right: 0;
 
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    text-decoration: none;
+    @extend %logo-style-text;
 
-    color: getColor('white-text');
+    color: getColor('logo-invers');
   }
 
   &__accent-logo {
@@ -59,8 +55,8 @@
 
   transition: color $timing-function-cubic;
 
-  &--hover:focus,
-  &--hover:hover {
+  &:focus,
+  &:hover {
     color: getColor('accent');
   }
 }
@@ -105,8 +101,8 @@
 
   transition: background-color $timing-function-cubic;
 
-  &--hover:hover,
-  &--hover:focus {
+  &:hover,
+  &:focus {
     background-color: getColor('accent');
   }
 }
@@ -152,8 +148,8 @@
 
   transition: border-color $timing-function-cubic;
 
-  &--hover:hover,
-  &--hover:focus {
+  &:hover,
+  &:focus {
     border-color: getColor('accent');
   }
 }
@@ -183,8 +179,8 @@
 
   transition: background $timing-function-cubic;
 
-  &--hover:hover,
-  &--hover:focus {
+  &:hover,
+  &:focus {
     background: #188ce8;
   }
 }
