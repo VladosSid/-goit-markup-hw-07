@@ -3,7 +3,7 @@ body {
   background-color: getColor('global-bacground');
   color: getColor('primary-text');
 
-  font-family: 'Roboto', sans-serif;
+  font-family: $fontPrimery;
   letter-spacing: 0.03em;
 }
 
@@ -22,23 +22,17 @@ p {
 //  -------- ПЛЕЙСХОЛДЕРЫ -------
 // ---- ЛОГО плейсхолдер
 %logo-style-text {
-  font-family: 'Raleway', sans-serif;
+  font-family: $fontLogo;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
 }
 
-/* ГЛОБАЛЬНЫЕ ПАДИНГИ ДЛЯ СЕКЦИЙ плейсхолдер */
+// ------ ГЛОБАЛЬНЫЕ ПАДИНГИ ДЛЯ СЕКЦИЙ плейсхолдер
 %section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-// -------- МИКСИНЫ --------
-// -------- Позиционированные элементы -------
-@mixin positioning($position: relative) {
-  position: $position;
 }
 
 .title-style {

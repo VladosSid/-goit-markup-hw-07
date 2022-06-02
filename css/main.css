@@ -3,7 +3,7 @@
 body {
   background-color: #ffffff;
   color: #212121;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
 
@@ -21,14 +21,13 @@ p {
 }
 
 .footer__logo, .navigation__logo {
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
 }
 
-/* ГЛОБАЛЬНЫЕ ПАДИНГИ ДЛЯ СЕКЦИЙ плейсхолдер */
 .portfolio, .clients, .team, .services {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -560,9 +559,6 @@ p {
 
 .backdrop__button-close-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .backdrop__icon-item {
