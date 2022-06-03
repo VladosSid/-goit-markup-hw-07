@@ -49,11 +49,11 @@
 
   cursor: pointer;
 
-  transition: border-color $timing-function-cubic;
+  transition: border-color $timing-function-cubic, background-color $timing-function-cubic;
 
   &:hover,
-  &:focus,
-  &:active {
+  &:focus {
+    background-color: #188ce8;
     border: 1px solid #188ce8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }

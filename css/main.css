@@ -194,9 +194,10 @@ p {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.primery__order-service:hover, .primery__order-service:focus, .primery__order-service:active {
+.primery__order-service:hover, .primery__order-service:focus {
+  background-color: #188ce8;
   border: 1px solid #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
