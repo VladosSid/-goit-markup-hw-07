@@ -158,7 +158,6 @@ p {
 
 .primery {
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   padding: 200px 0;
@@ -167,6 +166,7 @@ p {
   background-position: center;
   background-size: cover;
   background-color: #2f303a;
+  text-align: center;
 }
 .primery__text {
   margin-bottom: 30px;
@@ -177,10 +177,6 @@ p {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  text-align: center;
-}
-.primery__slogan {
-  display: block;
 }
 
 .primery__order-service {
@@ -195,15 +191,13 @@ p {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.primery__order-service:hover, .primery__order-service:focus {
-  background: #188ce8;
+.primery__order-service:hover, .primery__order-service:focus, .primery__order-service:active {
+  border: 1px solid #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -244,11 +238,9 @@ p {
   margin-right: -30px;
 }
 .services__item {
+  position: relative;
   flex-basis: calc(33.3333333333% - 30px);
   margin-right: 30px;
-}
-.services__block-img {
-  position: relative;
 }
 .services__labl {
   position: absolute;
@@ -341,7 +333,8 @@ p {
 
 .client__logo-container {
   display: flex;
-  padding: 16px 32px;
+  padding: 16px 30px;
+  box-sizing: border-box;
   justify-content: center;
   align-items: center;
   border: 1px solid #afb1b8;
@@ -478,6 +471,7 @@ p {
 }
 .subscribe__input:hover, .subscribe__input:focus {
   border-color: #2196f3;
+  outline: none;
 }
 
 .subscribe__button {
@@ -603,11 +597,11 @@ p {
   color: #212121;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__input:focus {
+.form__input:hover, .form__input:focus {
   border: 1px solid #2196f3;
   outline: none;
 }
-.form__input:focus + .form__icon {
+.form__input:hover + .form__icon, .form__input:focus + .form__icon {
   fill: #2196f3;
 }
 
@@ -803,12 +797,6 @@ p {
 }
 
 .card-set__description {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  top: 0;
-  left: 0;
-  height: 100%;
   padding: 0 24px;
   font-size: 18px;
   line-height: 1.6;

@@ -9,13 +9,10 @@
   }
 
   &__item {
+    @include positioning();
     flex-basis: calc(100% / 3 - $card-set-gap);
 
     margin-right: $card-set-gap;
-  }
-
-  &__block-img {
-    @include positioning();
   }
 
   &__labl {
